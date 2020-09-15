@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
-const db_path = "mongodb://mongo:27017/express-mongo";
+const db_path =
+  process.env.MONGODB_URI || "mongodb://mongo:27017/express-mongo";
 
 const config = {
   useUnifiedTopology: true,
