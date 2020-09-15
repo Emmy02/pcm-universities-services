@@ -3,7 +3,6 @@ const mongoose = require("mongoose");
 const db_path = "mongodb://localhost:27017/express-mongo";
 
 const config = {
-  useNewUrlParser: true,
   useUnifiedTopology: true,
 };
 
