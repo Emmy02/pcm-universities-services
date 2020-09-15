@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const db_path = "mongodb://localhost:27017/express-mongo";
+const db_path = "mongodb://mongo:27017/express-mongo";
 
 const config = {
   useUnifiedTopology: true,
