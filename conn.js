@@ -4,6 +4,7 @@ const db_path = "mongodb://localhost:27017/express-mongo";
 
 const config = {
   useUnifiedTopology: true,
+  useNewUrlParser: true,
 };
 
 mongoose.connect(db_path, config, (error) => {
