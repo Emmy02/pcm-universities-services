@@ -4,6 +4,8 @@ const bodyParser = require("body-parser");
 const conn = require("./conn");
 const mongoose = require("mongoose");
 
+const cors = require("cors");
+
 const app = express();
 
 require("dotenv").config();
@@ -15,7 +17,9 @@ app.use(
 );
 
 app.use(bodyParser.json());
+app.use(cors());
 
+app.options("*", cors());
 // Importing models and controllers
 const models = require("./models/university")(app, mongoose);
 const UniversityCtrl = require("./controllers/universities");
